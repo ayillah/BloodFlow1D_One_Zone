@@ -146,6 +146,7 @@ class OneZoneConSpeed(PDEModel1DWithExactSoln):
     # need to call these.
 
     def one_zone(self, x):
+        """Generate the one_zone basis functions."""
         i = 1.0j
 
         psi1 = np.exp((i * self.Omega * x) / self.speed())
